@@ -8,6 +8,13 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 100%;
+      height: 400px;
+  }
+  </style>
 </head>
 <body>
 
@@ -21,7 +28,7 @@
       <a class="nav-link" href="#">Home</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="#">Link 2</a>
+      <a class="nav-link" href="#">Login</a>
     </li>
 
     <!-- Dropdown -->
@@ -37,8 +44,43 @@
     </li>
   </ul>
 </nav>
-<br>
-  
+<div id="demo" class="carousel slide" data-ride="carousel">
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/la.jpg" alt="Los Angeles" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Find the Best Interns</h3>
+        <p>Reliable and Satisfying your Need</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/chicago.jpg" alt="Chicago" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Collaborate for Research Projects</h3>
+        <p>Great ongoing works as per current and future market demand</p>
+      </div>   
+    </div>
+    <div class="carousel-item">
+      <img src="images/ny.jpg" alt="New York" width="1100" height="500">
+      <div class="carousel-caption">
+        <h3>Exploit our Infrastructure</h3>
+        <p>World class Standards always maintained</p>
+      </div>   
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+
 <div class="container">
   <h3>Navbar With Dropdown</h3>
   <p>This example adds a dropdown menu in the navbar.</p>
